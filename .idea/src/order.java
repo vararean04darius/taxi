@@ -1,10 +1,24 @@
 public class order
 {
-    private int UID;
-    private int _dist;
-    public double _pretpekm=2.1;
-    driver sofer1 = new driver(1,"Vladimir", 162, true);
-    client pers1 = new client("Marin", "0748293732", 163.55, 110);
-    public String numesofer = sofer1.get_nume();
-    public String numeclient = pers1.get_nume();
+    private static int UID = 1034;
+    private static int _dist;
+    private static double _pretpekm=2.1;
+    public static driver sofer;
+    public static client cli;
+    public order(int dist, driver d, client c)
+    {
+        _dist = dist;
+        sofer = d;
+        cli = c;
+    }
+    public static void create_receipt()
+    {
+        System.out.println("Bon fiscal pentru cursa cu numarul "+ UID + " :");
+        System.out.println("Suma de platit: " + (_dist*_pretpekm) + " RON, pentru distanta: " + _dist );
+        System.out.println("Cursa efectuata de soferul: " + sofer.get_nume() + " avand ca pasager pe: " + cli.get_nume());
+    }
+    public static void cursa()
+    {
+
+    }
 }

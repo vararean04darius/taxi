@@ -31,4 +31,8 @@ public class driver
     {
         shift = shft;
     }
+    public void set_locatie(int loc)
+    {
+        _locatie = loc;
+    }
 }
