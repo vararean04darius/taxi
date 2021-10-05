@@ -86,6 +86,7 @@ public class dispatch
             System.out.println("Dorit sa faceti alta actiune?");
             System.out.println("1.Da");
             System.out.println("0.Nu");
+            raspuns=sc.nextInt();
         }
     }
 }
