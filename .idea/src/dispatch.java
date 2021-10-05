@@ -46,8 +46,10 @@ public class dispatch
         daux.set_locatie(loc);
         System.out.println("Soferul a ajuns, introduceti locatia la care vreti sa ajungeti:");
         int locfinal = sc.nextInt();
-        System.out.println("Doriti sa ajungeti la: " + locfinal + " care se afla la: " + (Math.abs(locfinal - loc)) + " metrii de adresa actuala.");
         int distantafinala = (Math.abs(locfinal - loc));
-        order(distantafinala, daux, cl);
+        System.out.println("Doriti sa ajungeti la: " + locfinal + " care se afla la: " + distantafinala + " metrii de adresa actuala.");
+        order comanda1 = new order(distantafinala, daux, cl);
+        comanda1.create_receipt();
+        comanda1.cursa();
     }
 }
