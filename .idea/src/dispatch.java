@@ -8,9 +8,9 @@ public class dispatch
         Scanner sc = new Scanner(System.in);
         //soferii care sunt in statii
         driver dr1 = new driver(1,"Vladimir", 150, true);
-        driver dr2 = new driver(2,"Costache", 400, true);
-        driver dr3 = new driver(3,"Marian", 750, true);
-        driver dr4 = new driver(4,"Alexandra", 1100, true);
+        driver dr2 = new driver(2,"Costache", 2400, true);
+        driver dr3 = new driver(3,"Marian", 3800, true);
+        driver dr4 = new driver(4,"Alexandra", 7400, true);
         System.out.println("Ati apelat la ProTaxi, va rugam sa: ");
         System.out.println("Introduceti numele dumneavoastra: ");
         String nume = sc.next();
@@ -25,12 +25,13 @@ public class dispatch
         while(raspuns!=0)
         {
             System.out.println("1.Apelare taxi");
-            System.out.println("2.Verificare taxa/km");
+            System.out.println("2.Verificare taxa/km si SOLD actual");
             System.out.println("3.Anulare");
             int apel=sc.nextInt();
             if(apel ==2)
             {
                 System.out.println("Taxa pe km este de: 2.1 RON pe KM");
+                System.out.println("Sold-ul dumneavoastra este de : " + cl.get_nrbani() + " RON");
             }
             if(apel ==1)
             {
