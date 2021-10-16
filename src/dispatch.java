@@ -88,8 +88,7 @@ public class dispatch
             raspuns=sc.nextInt();
         }
     }
-
-    //la amicii
+    //at amicii
 
 }
 
