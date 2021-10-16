@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.Random;
-import java.lang.Math;
 public class dispatch
 {
     public static void main(String[] args)
@@ -90,5 +88,8 @@ public class dispatch
             raspuns=sc.nextInt();
         }
     }
+
+    //la amicii
+
 }
 
